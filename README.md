@@ -1,4 +1,4 @@
-丨# FLY_Project
+# FLY_Project
 ## 文件结构:
 - 主控
   - readme.md
