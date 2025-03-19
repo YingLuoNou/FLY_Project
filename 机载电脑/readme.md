@@ -5,8 +5,8 @@
 ## ROS
 [ROS官网](https://www.ros.org/)  
 [ROS官方文档](https://docs.ros.org/)  
-[ROS 2官方文档](https://docs.ros.org/en/humble/index.html)  
-这里我们使用ROS 2  
+[ROS 1官方文档](https://wiki.ros.org/noetic)  
+这里我们使用ROS 1  
 ## Slam
 
 
