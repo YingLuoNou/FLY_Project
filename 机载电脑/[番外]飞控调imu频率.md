@@ -12,3 +12,13 @@ rosrun mavros mavcmd long 511 31 4500 0 0 0 0 0
 - 100Hz → 10000（10ms）
 - 200Hz → 5000（5ms）
 为了达到200HZ，经过测试，使用4500这个值
+在launch启动时就修改频率可以通过修改px4.launch文件
+```xml
+<launch>
+  <!-- ...其它启动配置代码 -->
+
+  <!-- 添加 -->
+  <node pkg="mavros" type="command" name="mavcmd_imu1" output="screen" args="511 105 4500 0 0 0 0 0" />
+  <node pkg="mavros" type="command" name="mavcmd_imu2" output="screen" args="511 31 4500 0 0 0 0 0" />
+<launch>
+```
