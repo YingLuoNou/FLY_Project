@@ -9,7 +9,7 @@
 [ROS 1官方文档](https://wiki.ros.org/noetic)  
 这里我们使用ROS 1  
 ## Slam
+请查看[安装mid360相关驱动](/机载电脑/7.安装mid360相关驱动.md)  
 
-
-[^1]:原因待笔者考究
+[^1]:ros1neotic在Ubuntu20.04适配良好
 [^2]:安装教程参考链接,注意安装Ubuntu20.04需指定版本号
