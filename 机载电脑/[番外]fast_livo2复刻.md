@@ -1,7 +1,7 @@
 ## 教程链接
 [gitee](https://gitee.com/gwmunan/ros2/wikis/pages?sort_id=10536766&doc_id=4855084)
 ## 安装HIKROBOT-MVS-CAMERA-ROS编译时报错
-**注意要安装客户端MVS**  
+**注意海康机器人工业相机要安装客户端MVS（不要装成runtime sdk）**  
 1.opencv版本报错（cmakelist文件内改版本）  
 2.显示找不到文件  
 ```bash
