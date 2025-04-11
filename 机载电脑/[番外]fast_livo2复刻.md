@@ -48,6 +48,8 @@ nRet = MV_CC_SetEnumValue(handle, "TriggerMode", 0);//0-不使用外部触发；
 ```  
 然后重新catkin_make  
 [来源](https://github.com/luckyluckydadada/HIKROBOT-MVS-CAMERA-ROS/issues/7)  
+## 安装无目标标定环境Ceres一定要使用1.14.0版本
+[链接](https://ceres-solver.googlesource.com/ceres-solver/+/refs/tags/1.14.0)  
 ## 安装无目标标定环境Ceres Solver时报错
 ```bash
 CMake Error at CMakeLists.txt:173 (find_package):
