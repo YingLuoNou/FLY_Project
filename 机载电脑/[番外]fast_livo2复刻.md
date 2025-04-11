@@ -1,5 +1,7 @@
 ## 教程链接
 [gitee](https://gitee.com/gwmunan/ros2/wikis/pages?sort_id=10536766&doc_id=4855084)
+## 连接wsl与USB设备
+[教程](https://learn.microsoft.com/zh-cn/windows/wsl/connect-usb)，需要执行完附加USB设备  
 ## 安装HIKROBOT-MVS-CAMERA-ROS编译时报错
 **注意海康机器人工业相机要安装客户端MVS（不要装成runtime sdk）**  
 1.opencv版本报错（cmakelist文件内改版本）  
