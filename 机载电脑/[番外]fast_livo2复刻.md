@@ -15,10 +15,10 @@
 ```
 [解决方法](https://github.com/luckyluckydadada/HIKROBOT-MVS-CAMERA-ROS/issues/12):  
 对于新版的海康SDK，首先查看你的链接库版本：  
-ls /opt/MVS/lib/64/  
+`ls /opt/MVS/lib/64/`  
 查看名称，如：libLog_gcc485_v3_0.so，注意其中的485  
 然后打开CMakeList  
-vi src/HIKROBOT-MVS-CAMERA-ROS/CMakeLists.txt  
+`vi src/HIKROBOT-MVS-CAMERA-ROS/CMakeLists.txt`  
 在第36行：  
 ```
 target_link_libraries(
