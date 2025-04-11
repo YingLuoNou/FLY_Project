@@ -45,5 +45,6 @@ MediaProcess
 //软件触发  
 // ********** frame **********/
 nRet = MV_CC_SetEnumValue(handle, "TriggerMode", 0);//0-不使用外部触发；1-使用外部触发
-```
+```  
+然后重新catkin_make  
 [来源](https://github.com/luckyluckydadada/HIKROBOT-MVS-CAMERA-ROS/issues/7)  
