@@ -2,7 +2,7 @@
 [gitee](https://gitee.com/gwmunan/ros2/wikis/pages?sort_id=10536766&doc_id=4855084)
 ## 安装HIKROBOT-MVS-CAMERA-ROS编译时报错
 **注意要安装客户端MVS**  
-1.opencv版本报错（cmake改版本）  
+1.opencv版本报错（cmakelist文件内改版本）  
 2.显示找不到文件  
 ```bash
 /usr/bin/ld: 找不到 -lGCBase_gcc421_v3_0
