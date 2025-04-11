@@ -48,3 +48,34 @@ nRet = MV_CC_SetEnumValue(handle, "TriggerMode", 0);//0-不使用外部触发；
 ```  
 然后重新catkin_make  
 [来源](https://github.com/luckyluckydadada/HIKROBOT-MVS-CAMERA-ROS/issues/7)  
+## 安装无目标标定环境Ceres Solver时报错
+```bash
+CMake Error at CMakeLists.txt:173 (find_package):
+  By not providing "Findabsl.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "absl", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "absl" with any of
+  the following names:
+
+    abslConfig.cmake
+    absl-config.cmake
+
+  Add the installation prefix of "absl" to CMAKE_PREFIX_PATH or set
+  "absl_DIR" to a directory containing one of the above files.  If "absl"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Configuring incomplete, errors occurred!
+```
+解决方法：  
+源码安装  
+```bash
+git clone https://github.com/abseil/abseil-cpp.git
+cd abseil-cpp
+mkdir build && cd build
+cmake .. -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_INSTALL_PREFIX=/usr/local
+make -j$(nproc)
+sudo make install
+```
