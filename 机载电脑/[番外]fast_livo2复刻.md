@@ -81,3 +81,22 @@ cmake .. -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_INSTALL_PREFIX=/usr/local
 make -j$(nproc)
 sudo make install
 ```
+## 无目标标定catkin_make出错
+```bash
+[ 66%] Linking CXX executable /home/yangluonou/livox_camera_calib/devel/lib/livox_camera_calib/bag_to_pcd
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libpcl_io.so: undefined reference to `libusb_set_option'
+collect2: error: ld returned 1 exit status
+make[2]: *** [livox_camera_calib/CMakeFiles/bag_to_pcd.dir/build.make:452: /home/yangluonou/livox_camera_calib/devel/lib/livox_camera_calib/bag_to_pcd] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2551: livox_camera_calib/CMakeFiles/bag_to_pcd.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+```
+这个链接错误是由于 libpcl_io.so 在链接时引用了 libusb_set_option 函数，但你当前系统中的 libusb 版本可能较旧（比如 1.0.23），而不包含这个函数。libusb_set_option 是从 libusb 1.0.26 才引入的。  
+```bash
+sudo apt install libudev-dev
+wget https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
+tar -xjf libusb-1.0.26.tar.bz2
+cd libusb-1.0.26
+./configure --prefix=/usr/local
+make -j$(nproc)
+sudo make install
+```
