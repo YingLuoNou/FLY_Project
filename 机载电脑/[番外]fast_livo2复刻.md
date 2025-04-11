@@ -48,9 +48,10 @@ nRet = MV_CC_SetEnumValue(handle, "TriggerMode", 0);//0-不使用外部触发；
 ```  
 然后重新catkin_make  
 [来源](https://github.com/luckyluckydadada/HIKROBOT-MVS-CAMERA-ROS/issues/7)  
-## 安装无目标标定环境Ceres一定要使用1.14.0版本
-[链接](https://ceres-solver.googlesource.com/ceres-solver/+/refs/tags/1.14.0)  
-## 安装无目标标定环境Ceres Solver时报错
+## 安装无目标标定环境Ceres一定要使用2.0.0及以下版本
+[2.0.0版本链接]([https://ceres-solver.googlesource.com/ceres-solver/+/refs/tags/1.14.0](http://ceres-solver.org/ceres-solver-2.0.0.tar.gz))  
+`wget http://ceres-solver.org/ceres-solver-2.0.0.tar.gz`  
+## 安装无目标标定(lidar_camera_calib)环境Ceres Solver时报错
 ```bash
 CMake Error at CMakeLists.txt:173 (find_package):
   By not providing "Findabsl.cmake" in CMAKE_MODULE_PATH this project has
@@ -81,7 +82,7 @@ cmake .. -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_INSTALL_PREFIX=/usr/local
 make -j$(nproc)
 sudo make install
 ```
-## 无目标标定catkin_make出错
+## 无目标标定(lidar_camera_calib)catkin_make出错
 ```bash
 [ 66%] Linking CXX executable /home/yangluonou/livox_camera_calib/devel/lib/livox_camera_calib/bag_to_pcd
 /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libpcl_io.so: undefined reference to `libusb_set_option'
