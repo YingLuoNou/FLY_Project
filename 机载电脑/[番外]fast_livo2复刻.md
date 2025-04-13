@@ -103,3 +103,32 @@ cd libusb-1.0.26
 make -j$(nproc)
 sudo make install
 ```
+## libusb_set_option报错
+这个链接错误是由于 libpcl_io.so 在链接时引用了 libusb_set_option 函数，但你当前系统中的 libusb 版本可能较旧（比如 1.0.23），而不包含这个函数。libusb_set_option 是从 libusb 1.0.26 才引入的。  
+- 检查当前版本：  
+  ```bash
+  pkg-config --modversion libusb-1.0
+  ```
+- 下载源码并编译新版本 libusb：  
+  ```bash
+  sudo apt remove libusb-1.0-0-dev
+  
+  wget https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
+  tar -xjf libusb-1.0.26.tar.bz2
+  cd libusb-1.0.26
+  ./configure --prefix=/usr/local
+  make -j$(nproc)
+  sudo make install
+  ```
+- 确保新版本被使用：
+  ```bash
+  export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+  export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+  ```
+  如果你使用 catkin 编译，建议在 CMakeLists.txt 中指定 libusb 路径：
+  ```txt
+  link_directories(/usr/local/lib)
+  include_directories(/usr/local/include/libusb-1.0)
+  ```
+## mid360无需连接stm32 PA9进行卫星授时
+否则会出现时间对不齐问题
