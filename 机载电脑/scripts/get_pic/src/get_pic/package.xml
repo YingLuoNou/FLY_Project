@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>get_pic</name>
+  <version>0.0.1</version>
+  <description>Save one image from /hikrobot_camera/rgb topic as PNG</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+
+  <export>
+  </export>
+</package>
