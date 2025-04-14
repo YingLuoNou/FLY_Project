@@ -135,4 +135,4 @@ sudo make install
 否则会出现时间对不齐问题
 ## lidar_camera_calib自动标参
 环境要求比较苛刻，要有横竖两种边界明显，无杂乱纹理，光影充足的大柱子是最好的场地
-拍照脚本及mid360获取录制点云pcd文件详见(scripts文件夹)[机载电脑/scripts/get_pic]  
+拍照脚本及mid360获取录制点云pcd文件详见[scripts文件夹](机载电脑/scripts/get_pic)  
