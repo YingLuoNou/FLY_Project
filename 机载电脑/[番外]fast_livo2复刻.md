@@ -137,3 +137,11 @@ sudo make install
 ## lidar_camera_calib自动标参
 环境要求比较苛刻，要有横竖两种边界明显，无杂乱纹理，光影充足的大柱子是最好的场地
 拍照脚本及mid360获取录制点云pcd文件详见[scripts文件夹](scripts/get_pic)  
+## 相机内参标定说明：
+![e4bd69f68ac8a5ea7febed3b1d6661b1](https://github.com/user-attachments/assets/965b4673-3789-447c-a860-c80fc8a4b656)  
+## 联合标定参数说明 
+![9246ceb8_506465](https://github.com/user-attachments/assets/f993ebe8-93d0-4938-b722-a20579a1bdc5)  
+![2dff288fecf491ed168da8f1c13722ce](https://github.com/user-attachments/assets/741e1f2b-ef76-4a23-b41b-c713f9b8e1e3)
+
+
+
