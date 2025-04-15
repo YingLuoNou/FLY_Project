@@ -101,6 +101,9 @@ sudo apt install libudev-dev
 wget https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
 tar -xjf libusb-1.0.26.tar.bz2
 cd libusb-1.0.26
+
+sudo apt install libudev-dev
+
 ./configure --prefix=/usr/local
 make -j$(nproc)
 sudo make install
