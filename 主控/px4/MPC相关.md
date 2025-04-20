@@ -8,8 +8,8 @@ MPC_XY_VEL_MAX  |  最大水平速度	| 1m/s
 MPC_XY_CRUISE   |  默认水平巡航速度（Mission/Offboard）| 0.6m/s
 MPC_XY_ACC_MAX	|  水平最大加速度	| 1.0m/s<sup>2</sup>
 MPC_XY_VEL_ALL	|  所有模式下的最大水平速度（包括自动/手动）
-MPC_THR_MAX     |  60%
-MPC_THR_MIN     |  15%
+MPC_THR_MAX     |  | 60%
+MPC_THR_MIN     |  | 15%
 MPC_Z_VEL_MAX_UP|  上升最大速度 | 0.8m/s
 MPC_Z_VEL_MAX_DN|  下降最大速度 | 0.5m/s
 MPC_Z_ACC_MAX	  |  垂直最大加速度 | 1m/s<sup>2</sup>
