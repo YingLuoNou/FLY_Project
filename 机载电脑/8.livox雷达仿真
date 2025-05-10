@@ -1,0 +1,12 @@
+## catkin_make报错
+1. 打开 CMakeLists.txt  
+在你的 catkin_ws/src/livox_simulation_customMsg/CMakeLists.txt 文件中，添加如下设置：  
+```cmake
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+```
+确保这两行加在 project(...) 之后。  
+注释掉：
+```cmake
+add_compile_options(-std=c++11)
+```
