@@ -2,6 +2,7 @@
 [gitee](https://gitee.com/gwmunan/ros2/wikis/pages?sort_id=10536766&doc_id=4855084)  
 [fastlivo2地址](https://github.com/hku-mars/FAST-LIVO2)  
 [自动联合标定](https://github.com/hku-mars/livox_camera_calib/tree/master)  
+[推荐的手动加自动标定](https://gitee.com/gwmunan/ros2/wikis/pages?sort_id=13097190&doc_id=4855084)  
 ## 连接wsl与USB设备
 [教程](https://learn.microsoft.com/zh-cn/windows/wsl/connect-usb)，需要执行完附加USB设备  
 ## 安装HIKROBOT-MVS-CAMERA-ROS编译时报错
