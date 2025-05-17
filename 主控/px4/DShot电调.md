@@ -11,6 +11,9 @@ DSHOT_CONFIG|DShot600
 
 DShot电调：https://docs.px4.io/v1.15/zh/peripherals/dshot.html#commands
 
+更改顺序
+
+https://docs.px4.io/v1.12/zh/config_mc/racer_setup.html
 
 
 
