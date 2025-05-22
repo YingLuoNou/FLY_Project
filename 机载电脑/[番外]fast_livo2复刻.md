@@ -7,7 +7,7 @@
 ![image](https://github.com/user-attachments/assets/1a347a73-fc70-4ccd-84b0-8232efaef300)  
 8 接STM32的PB5引脚，获取1HZ的PWM信号  
 ![image](https://github.com/user-attachments/assets/9960190a-31f2-410e-91f5-924775533b0e)  
-2 接STM32的PA1引脚，获取外部10HZ的PWM信号
+2 接STM32的PA1引脚，获取外部10HZ的PWM信号  
 5 接STM32的GND
 ## 连接wsl与USB设备
 [教程](https://learn.microsoft.com/zh-cn/windows/wsl/connect-usb)，需要执行完附加USB设备  
