@@ -11,7 +11,7 @@
 5 接STM32的GND
 ## 连接wsl与USB设备
 [教程](https://learn.microsoft.com/zh-cn/windows/wsl/connect-usb)，需要执行完附加USB设备  
-## 安装HIKROBOT-MVS-CAMERA-ROS编译时报错
+## 安装HIKROBOT-MVS-CAMERA-ROS编译时报错 *（海康相机ros包建议安装老版本 https://github.com/luckyluckydadada/HIKROBOT-MVS-ROS-package.git 新版会有色彩问题，暂无解决方法-2025.7.4）*
 **注意海康机器人工业相机要安装客户端MVS（不要装成runtime sdk）**  
 1.opencv版本报错（cmakelist文件内改版本）  
 2.显示找不到文件  
