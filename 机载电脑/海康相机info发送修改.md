@@ -90,7 +90,7 @@ int main(int argc, char **argv)
 }
 ```
 
-#旧版请修改.cpp+.h文件
+# 旧版请修改.cpp+.h文件
 hk_camera_node.cpp
 ```hk_camera_node.cpp
 #include <image_transport/image_transport.h>
