@@ -15,7 +15,7 @@ DShot电调：https://docs.px4.io/v1.15/zh/peripherals/dshot.html#commands
 
 https://docs.px4.io/v1.12/zh/config_mc/racer_setup.html
 
-四合一电调常用电机顺序更改参数，MOT_ORDERING
+四合一电调常用电机顺序更改参数[MOT_ORDERING](https://docs.px4.io/v1.12/zh/config_mc/racer_setup.html)
 
 
 
