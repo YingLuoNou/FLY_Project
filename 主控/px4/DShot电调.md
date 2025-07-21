@@ -7,11 +7,11 @@ io那边不支持dshot协议。要使用dhsot，只能接到fmu那边！！！�
 SYS_USE_IO|disable
 DSHOT_CONFIG|DShot600
 
-电机反转教学参考下面的文章
+### 电机反转教学参考下面的文章
 
 DShot电调：https://docs.px4.io/v1.15/zh/peripherals/dshot.html#commands
 
-更改顺序
+### 更改顺序
 
 https://docs.px4.io/v1.12/zh/config_mc/racer_setup.html
 
