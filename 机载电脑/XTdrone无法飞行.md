@@ -3,3 +3,4 @@
 - `param set COM_RCL_EXCEPT 4`
 - `param set NAV_DLL_ACT 0`
 - `param set NAV_RCL_ACT 0`
+来源：https://github.com/PX4/PX4-Autopilot/issues/19919
